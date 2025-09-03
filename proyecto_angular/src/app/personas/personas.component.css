@@ -1,0 +1,26 @@
+/* VARIABLES DE ESTILO LOCALES   */
+
+:root{
+    --color-fondos:var(--ninth-color);
+    --primary-color: #008080;
+    --secondary-color: #96b5f9;
+    --tertiary-color: #FFD700;
+    --quaternary-color: #9b6729;
+    --fifth-color: #FF0000;
+    --sixth-color: #800080;
+    --seventh-color: #0000FF;
+    --eighth-color: #00FF00;
+    --ninth-color: #e48ab1;
+    --tenth-color: #000000;
+    --eleventh-color: #FFFFFF;
+
+    --border-radius-1: .15rem;
+    --font-size-1: 1rem;
+    --font-family-1: 'Roboto', sans-serif;
+
+}
+
+h1{
+    font-size: 100px;
+    color:black;
+}
