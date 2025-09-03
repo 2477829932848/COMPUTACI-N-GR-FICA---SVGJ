@@ -1,3 +1,47 @@
+/* Importar fuente Nerko One */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+/* ---------- Estilos para el título ---------- */
+h2 {
+  color: #ff4900;
+  font-size: 2rem;
+}
+
+/* ---------- Párrafos ---------- */
+p.normal {
+  font-size: 1rem; /* 16px */
+  color: #0093FF;
+  font-family: Arial, sans-serif;
+}
+
+p.nerko {
+  font-size: 12px;
+  color: #c500ff;
+  font-family: 'Nerko One', cursive;
+}
+
+/* ---------- Enlaces ---------- */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li a {
+  color: #001bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul li a:visited {
+  color: #4CAF50;
+}
+
+ul li a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+
 /* Tabla */
 table {
   border-collapse: collapse;
