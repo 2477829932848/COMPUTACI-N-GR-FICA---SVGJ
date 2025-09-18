@@ -69,8 +69,8 @@ body {
 /* Inputs de formulario */
 .p-inputtext,         /* campo de teléfono */
 .p-password,          /* Campo de contraseña */
-.p-dropdown,          /* Selector de ciudad */
-.p-calendar {         /* Selector de fecha de nacimiento */
+.p-select,          /* Selector de ciudad */
+.p-datepicker {         /* Selector de fecha de nacimiento */
   border: 2px solid var(--lila-principal);
   border-radius: 8px;
   padding: 0.5rem;
@@ -78,8 +78,8 @@ body {
 
 .p-inputtext:focus,
 .p-password:focus,
-.p-dropdown:focus,
-.p-calendar:focus {
+.p-select:focus,
+.p-datepicker:focus {
   border-color: var(--agua-vibrante); /* Aguamarina al enfocar */
   box-shadow: 0 0 4px var(--agua-pastel);
 }
