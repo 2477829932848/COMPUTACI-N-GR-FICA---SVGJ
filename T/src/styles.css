@@ -1,20 +1,160 @@
-/* You can add global styles to this file, and also import other style files */
- :root{
- --color-primario:#ffffff;
- --color-1: #051701;
- --color-2: #73a969;
- --color-3: #1DB800;
- --border-radius-1: .25rem; 
- --font-size: 1rem
- --font-family-1: 'Roboto',sans-serif;
- 
- }
- 
- html,
- body{
- margin:0;
- padding:0;
- background-color: var(--color-1);
- font-family: var(--font-family-1);
- color: var(--color-3);
- }
+/* COLORES
+   #81638b → Lila oscuro
+   #b695c0 → Lila pastel principal
+   #dac9df → Lila claro
+   #5dc1b9 → Aguamarina vibrante
+   #9ce0db → Aguamarina pastel principal
+*/
+/* PALETA GLOBAL DE COLORES Y ESTILOS */
+:root {
+  /* 🔹 Colores base */
+  --color-primario: #ffffff; /* Blanco general para fondos */
+  --color-texto: #4a4a4a;    /* Texto principal gris oscuro */
+
+
+  --lila-oscuro: #81638b;      /* Encabezados, accordion header */
+  --lila-principal: #b695c0;   /* Navbar, botones secundarios */
+  --lila-claro: #dac9df;       /* Fondo general de la app, tarjetas */
+
+
+  --agua-vibrante: #5dc1b9;    /* Hover de inputs y botones */
+  --agua-pastel: #9ce0db;      /* Botón de registro principal */
+
+
+  --border-radius-1: .25rem; 
+  --font-size: 1rem;
+  --font-family-1: 'Roboto', sans-serif;
+}
+
+/* Estilos globales de la app */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--lila-claro); /* Fondo general */
+  font-family: var(--font-family-1);
+  color: var(--color-texto); /* Texto por defecto */
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: var(--lila-principal); /* Barra superior lila */
+  color: white;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--agua-pastel); /* Aguamarina en hover */
+}
+
+/* Tarjetas (Card de PrimeNG) */
+.p-card {
+  background-color: var(--color-primario);
+  border: 1px solid var(--lila-claro);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+}
+
+/* Inputs de formulario */
+.p-inputtext,         /* campo de teléfono */
+.p-password,          /* Campo de contraseña */
+.p-dropdown,          /* Selector de ciudad */
+.p-calendar {         /* Selector de fecha de nacimiento */
+  border: 2px solid var(--lila-principal);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.p-inputtext:focus,
+.p-password:focus,
+.p-dropdown:focus,
+.p-calendar:focus {
+  border-color: var(--agua-vibrante); /* Aguamarina al enfocar */
+  box-shadow: 0 0 4px var(--agua-pastel);
+}
+
+/* Botón de registro */
+.p-button {
+  background-color: var(--agua-pastel); /* Aguamarina pastel */
+  border: none;
+  color: #333;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: 0.3s;
+}
+
+.p-button:hover {
+  background-color: var(--agua-vibrante); /* Aguamarina más fuerte */
+  color: white;
+}
+
+/* Mensajes Toast (notificaciones) */
+.p-toast-message {
+  background-color: var(--lila-principal); /* Fondo lila */
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Accordion (sección de información adicional) */
+.p-accordion .p-accordion-header {
+  background-color: var(--lila-oscuro);
+  color: white;
+}
+
+.p-accordion .p-accordion-content {
+  background-color: var(--lila-claro);
+}
+
+/* Footer */
+footer {
+  background-color: var(--lila-principal); /* Fondo lila */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: var(--agua-pastel); /* redes sociales */
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--agua-vibrante);
+}
+
+/*si el sistema está en dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--lila-oscuro); /* Fondo más oscuro */
+    color: var(--color-primario);
+  }
+
+  .p-card {
+    background-color: #3a2f41; /* Lila grisáceo oscuro */
+    border: 1px solid var(--lila-principal);
+  }
+
+  .p-button {
+    background-color: var(--agua-vibrante);
+    color: white;
+  }
+
+  .navbar {
+    background-color: var(--lila-oscuro);
+  }
+
+  footer {
+    background-color: var(--lila-oscuro);
+  }
+}
