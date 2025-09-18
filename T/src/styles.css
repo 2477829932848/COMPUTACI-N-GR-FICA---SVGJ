@@ -6,6 +6,9 @@
    #9ce0db → Aguamarina pastel principal
 */
 /* PALETA GLOBAL DE COLORES Y ESTILOS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 :root {
   /* 🔹 Colores base */
   --color-primario: #ffffff; /* Blanco general para fondos */

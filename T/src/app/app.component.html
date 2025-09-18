@@ -1,8 +1,33 @@
 
-<div class="card flex justify-center">
-    <p-toast />
-    <p-button (onClick)="show()" label="Show" />
+<menubar-template-comp></menubar-template-comp>
+<div class="container">
+    <h1>Formulario</h1>
+    <div class="p-card flex justify-center">
+        <p>Nombres:</p>
+        <input-text-comp pInputText="Nombre"></input-text-comp>
+        <p>Apellidos:</p>
+        <input-text-comp pInputText="Apellido"></input-text-comp>
+    </div>
+    <div class="p-card flex justify-center">
+        <p>Fecha de Nacimiento:</p>
+        <datepicker-comp></datepicker-comp>
+        <p>Seleccione Ciudad:</p>
+        <select-basic-demo></select-basic-demo>
+        <p>Telefono:</p>
+        <input-mask-tel-comp></input-mask-tel-comp>
+        <p>Genero:</p>
+        <radio-button-genero></radio-button-genero>
+    </div>
+    <div class="p-card flex justify-center">
+        <p>Motivo y especificaciones:</p>
+        <input-text-comp pInputText="Motivo"></input-text-comp>
+        <p>Contraseña:</p>
+        <password-meter-comp></password-meter-comp>
+        <p>Acepta terminos y condiciones:</p>
+        <checkbox-comp></checkbox-comp>
+    </div>
+    <div class="p-card flex justify-center">
+        <toast-comp></toast-comp>
+    </div>
 </div>
-<menu-componente></menu-componente>
-<split-button-basic-demo></split-button-basic-demo>
 <router-outlet />
